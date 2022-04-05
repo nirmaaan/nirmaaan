@@ -1,12 +1,12 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+
+import Nav from './componenets/nav';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1> App. </h1>
-      </header>
+        <Nav />
     </div>
   );
 }
