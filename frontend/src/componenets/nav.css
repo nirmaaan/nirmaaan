@@ -1,8 +1,8 @@
-
-h1{
-    color: black;
+.nav h1{
+    color: blue;
     border-style: dotted;
     border-width: 1px;
     padding: 0.2em;
     margin-top: None;
 }
+

@@ -3,6 +3,15 @@ import './nav.css'
 
 export default function Nav(){
 
-   return( <h1> Nav </h1> )
+   return( 
+
+   <div className="nav">
+
+    <h1>Nav Bar here.</h1> 
+
+   </div>
+   )
+   
+
 }
 
