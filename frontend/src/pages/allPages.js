@@ -11,8 +11,8 @@ export function AboutPage(){
 
                 <div className="intro cell"> 
                 
-                <text className='fname'>NIRMAN </text>
-                <text className='lname'>KESARI</text>
+                <h3 className='fname'>NIRMAN </h3>
+                <h3 className='lname'>KESARI</h3>
                 <h5 className='role'> Data Consultant </h5>
 
                 <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quasi. Repellendus fugit aperiam pariatur recusandae laboriosam dolores, nesciunt praesentium et numquam eligendi voluptatum eaque tempora non temporibus a facilis sit, minima aut. Doloremque quibusdam commodi asperiores consequuntur natus error officia quia. Fugit dignissimos, dolores beatae fugiat quasi veniam. </p>

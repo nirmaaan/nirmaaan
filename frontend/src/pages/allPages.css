@@ -171,7 +171,9 @@ img {
 
 
 .fname {
+    display:inline;
     color:azure;
+    font-weight: normal;
 
     border-width: var(--border-width);
     border-style: var(--border-style);
@@ -179,7 +181,10 @@ img {
  
 }
 .lname {
+    display:inline;
+    font-weight: normal;
     color:var(--nav-background-color);
+
 
     border-width: var(--border-width);
     border-style: var(--border-style);

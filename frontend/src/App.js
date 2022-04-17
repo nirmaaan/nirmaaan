@@ -7,11 +7,18 @@ import { AboutPage, ResumePage, PortfolioPage, LetstalkPage } from './pages/allP
 
 function App() {
 
-  console.log("directory", __dirname)
+  
+  console.log('refreshed')
+
+
+
+
+
   return (
+    <>
     <div className="App">
  
-        <>
+        
         <div className="row grid">
 
           {/* NAV PANE*/}
@@ -43,16 +50,11 @@ function App() {
 
           </div>
         </div>
-        </>
-
-
-
-
-
       
-    
         
     </div>
+    </>
+
   );
 }
 
