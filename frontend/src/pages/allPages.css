@@ -1,9 +1,14 @@
 :root{
     --font-size: 1.5vw;
-    --border-width:0.1rem;
+    --paragraph-font-size:1.2vw;
+    --border-width:0rem;
     --border-style:dotted;
     --border-color:white;
     --font-family:Arial;
+
+    --nav-background-color: rgb(61, 156, 245);
+    --pane-background-color: black;
+    --font-color-1:white;
     
 }
 
@@ -22,7 +27,8 @@
 .cell {
     
     padding: 2rem;
-    background-color: rgb(36, 37, 38);
+    /* background-color: rgb(36, 37, 38); */
+    background-color: var(--nav-background-color);
 
     border-width: var(--border-width);
     border-style: var(--border-style);
@@ -75,14 +81,14 @@
     display: inline-block;
     margin-top:10px;
  
-    color: white;
+    color: var(--font-color-1);
     
 
     border-width: var(--border-width);
     border-style: var(--border-style);
     border-color: var(--border-color);
 
-    text-decoration: underline 0.1em rgba(36,37,38,1);
+    text-decoration: underline 0.05em var(--nav-background-color);
     /* text-underline-offset: 0.3em; */
     transition: text-decoration-color 300ms, text-underline-offset 10ms;
 
@@ -95,10 +101,13 @@
         display: inline-block;
         
         /* ---> animation for underline */
-        text-decoration-color: rgba(255,255,255,1);
-        text-underline-offset: 0.25em;    
+        text-decoration-color: var(--font-color-1);
+        text-underline-offset: 0.25em;  
+        
+        
         
 }
+
 
 
 
@@ -130,6 +139,13 @@
     border-color: var(--border-color);
 }
 
+
+@keyframes imageborderanimation {
+    from {border-color: var(--font-color-1);}
+    to {border-color: var(--pane-background-color);}
+    /* to {border-color: var(--font-color-1);} */
+  }
+
 img {
      /*position*/
 
@@ -143,22 +159,49 @@ img {
     border-radius: 50%;
     width: 15vw;
     min-width: 15px;
-    border-width: 0.3vw;
-    border-color: white;
+    border-width: 0.1vw;
     border-style: solid;
+
+    animation-name: imageborderanimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
     
 }
 
 
 
 .fname {
-    color:azure
+    color:azure;
+
+    border-width: var(--border-width);
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+ 
 }
 .lname {
-    color:grey
+    color:var(--nav-background-color);
+
+    border-width: var(--border-width);
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+  
+}
+
+.role {
+  
+    margin:10px 0px 1px 0px;
+    border-width: var(--border-width);
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+
 }
 
 .intro > p{
-    font-size: 1.4vw;
-    margin-top:5px;
+    font-size: var(--paragraph-font-size);
+    color: rgb(189, 189, 189);
+    margin-top:10px;
+
+    border-width: var(--border-width);
+    border-style: var(--border-style);
+    border-color: var(--border-color);
 }
