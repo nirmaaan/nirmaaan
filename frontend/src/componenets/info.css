@@ -1,9 +1,10 @@
 :root{
-    --font-size: 2vw;
+    --font-size: 1.5vw;
     --border-width:0.1rem;
     --border-style:dotted;
     --border-color:white;
     --font-family:Arial;
+    
 }
 
 .row {
@@ -21,7 +22,7 @@
 .cell {
     
     padding: 2rem;
-    background-color: #242526;
+    background-color: rgb(36, 37, 38);
 
     border-width: var(--border-width);
     border-style: var(--border-style);
@@ -57,7 +58,7 @@
 .nav{
 
     margin: 0;
-    position: absolute;
+    position: relative;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -70,14 +71,33 @@
 
 
 
-.nav > p {
-
-    margin:0;
+.nav > a {
+    display: inline-block;
+    margin-top:10px;
+ 
+    color: white;
+    
 
     border-width: var(--border-width);
     border-style: var(--border-style);
     border-color: var(--border-color);
 
+    text-decoration: underline 0.1em rgba(36,37,38,1);
+    /* text-underline-offset: 0.3em; */
+    transition: text-decoration-color 300ms, text-underline-offset 10ms;
+
+}
+
+.nav > a:hover {
+   
+        cursor: default;
+        /* color: #b8b8b8; */
+        display: inline-block;
+        
+        /* ---> animation for underline */
+        text-decoration-color: rgba(255,255,255,1);
+        text-underline-offset: 0.25em;    
+        
 }
 
 
@@ -121,13 +141,15 @@ img {
 
 
     border-radius: 50%;
-    width: 14vw;
+    width: 15vw;
     min-width: 15px;
     border-width: 0.3vw;
     border-color: white;
     border-style: solid;
     
 }
+
+
 
 .fname {
     color:azure
@@ -137,5 +159,6 @@ img {
 }
 
 .intro > p{
-    font-size: 1vw;
+    font-size: 1.4vw;
+    margin-top:5px;
 }

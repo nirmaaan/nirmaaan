@@ -1,9 +1,9 @@
-// import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import './App.css';
-// import f1 from './static/f1.jpg'
+import { AboutPage, ResumePage, PortfolioPage, LetstalkPage } from './pages/allPages';
 
 
-import Info from './componenets/info';
 
 function App() {
 
@@ -11,9 +11,18 @@ function App() {
   return (
     <div className="App">
  
-        <Info />
-    
+        {/* <AboutPage /> */}
+        <Router>
 
+        <Routes>
+          <Route path="/" element={<AboutPage />} />
+          <Route path="/resume" element={<ResumePage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/letstalk" element={<LetstalkPage />} />
+        </Routes>
+
+        </Router>
+    
         
     </div>
   );

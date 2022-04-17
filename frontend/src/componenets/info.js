@@ -11,11 +11,11 @@ export default function Info(){
       <div className="cell"> 
 
             <div className="nav">
-                <p> About </p>
-                <p> Résumé </p>
-                <p> Portfolio</p>
-                <p> Let's Talk </p>
-                
+                <a href="/"> About </a><br></br>
+                <a href="/resume"> Resume </a><br></br>
+                <a href="/portfolio"> Portfolio</a><br></br>
+                <a href="/letstalk"> Let's Talk </a><br></br>
+          
             </div>
       
       </div>
@@ -35,7 +35,7 @@ export default function Info(){
         <text className='fname'>NIRMAN </text>
         <text className='lname'>KESARI</text>
 
-        <p> Information about yourself. </p>
+        <p> Data Consultant </p>
 
         
         </div>
