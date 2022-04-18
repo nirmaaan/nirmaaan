@@ -19,36 +19,34 @@ function App() {
     <div className="App">
  
         
-        <div className="row grid">
+        <div className="main-container">
 
-          {/* NAV PANE*/}
-          <div className="cell"> 
+          {/* lEFT PANE - First Grid Box*/}
+            <div className="left-pane"> 
 
-              <div className="nav">
-                  <a href="/"> About </a><br></br>
-                  <a href="/resume"> Resume </a><br></br>
-                  <a href="/portfolio"> Portfolio</a><br></br>
-                  <a href="/letstalk"> Let's Talk </a><br></br>
-              </div>
+                <div className="nav-box">
+                    <a href="/"> About </a><br></br>
+                    <a href="/resume"> Resume </a><br></br>
+                    <a href="/portfolio"> Portfolio</a><br></br>
+                    <a href="/letstalk"> Let's Talk </a><br></br>
+                </div>
 
-          </div>
-
-
+            </div>
 
 
-          {/* INFO PANE */}
-          <div className="cell info-grid"> 
 
-            <Router>
-              <Routes>
-                <Route path="/" element={<AboutPage />} />
-                <Route path="/resume" element={<ResumePage />} />
-                <Route path="/portfolio" element={<PortfolioPage />} />
-                <Route path="/letstalk" element={<LetstalkPage />} />
-              </Routes>
-            </Router>
+            {/* RIGHT PANE - Second Grid Box */}
+            <div className="right-pane"> 
+              <Router>
+                <Routes>
+                  <Route path="/" element={<AboutPage />} />
+                  <Route path="/resume" element={<ResumePage />} />
+                  <Route path="/portfolio" element={<PortfolioPage />} />
+                  <Route path="/letstalk" element={<LetstalkPage />} />
+                </Routes>
+              </Router>
+            </div>
 
-          </div>
         </div>
       
         
