@@ -5,20 +5,20 @@ import { AboutPage, ResumePage, PortfolioPage, LetstalkPage } from './pages/allP
 
 
 
+
+
 function App() {
-
   
-  console.log('refreshed')
-
-
-
+  // console.log('refreshed')
 
 
   return (
     <>
+
+
+
     <div className="App">
  
-        
         <div className="main-container">
 
           {/* lEFT PANE - First Grid Box*/}
@@ -34,9 +34,6 @@ function App() {
             </div>
 
 
-
-            {/* RIGHT PANE - Second Grid Box */}
-            <div className="right-pane"> 
               <Router>
                 <Routes>
                   <Route path="/" element={<AboutPage />} />
@@ -45,7 +42,7 @@ function App() {
                   <Route path="/letstalk" element={<LetstalkPage />} />
                 </Routes>
               </Router>
-            </div>
+          
 
         </div>
       

@@ -1,16 +1,21 @@
 :root{
     --font-size: 1.2vw;
     --paragraph-font-size:1vw;
-    --border-width:0.1rem;
+    --border-width:0rem;
     --border-style:dotted;
     --border-color:white;
     --font-family:Arial;
-
-    --nav-background-color: rgb(61, 156, 245);
+    --nav-background-color: #3d9cf5;
     --pane-background-color: #000000;
     --font-color-1:#ffffff;
+}
+
+body{
+    overflow: hidden;
+    scrollbar-width: thin;
     
 }
+
 
 /* MAIN CONTAINER */
 .main-container{
@@ -22,7 +27,10 @@
     border-width: var(--border-width);
     border-style: var(--border-style);
     border-color: var(--border-color);
+    
 }
+
+
 
 /* LEFT PANE */
 .left-pane {
@@ -30,10 +38,6 @@
     padding: 2rem;
     /* background-color: rgb(36, 37, 38); */
     background-color: var(--nav-background-color);
-
-    /* border-width: 0.5em;
-    border-style: solid;
-    border-color: yellow; */
 
 
 }
@@ -49,6 +53,8 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 
+    padding:10px;
+
     border-width: var(--border-width);
     border-style: var(--border-style);
     border-color: var(--border-color);
@@ -58,9 +64,11 @@
 /*  NAV ITEMS */
 .nav-box > a {
     display: inline-block;
-    margin-top:10px;
- 
+
+    font-size: var(--font-size);
     color: var(--font-color-1);
+    
+    margin-top:10px;
 
     text-decoration: underline 0.05em var(--nav-background-color);
     transition: text-decoration-color 300ms, text-underline-offset 10ms;
@@ -81,21 +89,33 @@
     text-decoration-color: var(--font-color-1);
     text-underline-offset: 0.25em;  
     
-    
 }
+
+.nav-box > a:active {
+    color: var(--pane-background-color);
+}
+
+
 
 /* RIGHT PANE */
 .right-pane{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-
     background-color: #000000;
-    
+    font-size:var(--font-size);
+
+   
 }
 
 
 
 /* --------- ABOUT PAGE ---------> */
+
+
+/* STRUCTURE OF RIGHT PANE IN ABOUT*/
+.aboutpage {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* ADDED GRID TEMPLATE */
+      
+}
 
 
 /* RIGHT PANE INFO BOX */
@@ -105,6 +125,8 @@
     height: 15vw;
     background-color: #000000;
     color: var(--font-color-1);
+
+    padding: 10px;
 
     /*position*/
     margin: 0;
@@ -139,22 +161,25 @@
     transform: translateY(-50%);
 
 
-    border-radius: 50%;
+    border-radius: 90%;
     width: 15vw;
     min-width: 15px;
     border-width: 0.1vw;
     border-style: solid;
 
     animation-name: imageborderanimation;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
     
 }
 
 
 .image-info-box > .fname {
+
     display:inline;
-    color:azure;
+    color: var(--font-color-1);
     font-weight: normal;
 
     border-width: var(--border-width);
@@ -164,7 +189,7 @@
 }
 .image-info-box > .lname {
     display:inline;
-    font-weight: normal;
+    font-weight: bold;
     color:var(--nav-background-color);
 
 
@@ -187,6 +212,7 @@
     font-size: var(--paragraph-font-size);
     color: rgb(189, 189, 189);
     margin-top:10px;
+    padding:10px 0px 10px 0px;
 
     border-width: var(--border-width);
     border-style: var(--border-style);
@@ -202,6 +228,44 @@
 /* --------- RESUME PAGE ---------> */
 
 
+
+.resumepage {
+    background-color: var(--font-color-1);
+
+    overflow: auto;
+    scrollbar-width: thin;
+
+}
+
+
+
+/* SCROLL BAR RESUME PAGE */
+
+.resumepage::-webkit-scrollbar {
+    height: 0.5vh;
+    width: 0.25vw;               /* width of the entire scrollbar */ 
+  }
+.resumepage::-webkit-scrollbar-track {
+    background: var(white);        /* color of the tracking area */
+  }
+.resumepage::-webkit-scrollbar-thumb {
+    background-color: white;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 1vw solid grey; 
+  }
+
+.resumepages {
+
+    padding-top:10px;
+    padding-left:12vw;
+
+}
+
+
+
+
+
+
 .skillbox{
     display: block;
     padding: 10px 0px 10px 0px;
@@ -210,3 +274,95 @@
     border-style: var(--border-style);
     border-color: var(--border-color);
 }
+
+
+
+
+/* --------- PORTFOLIO PAGE ---------> */
+
+.portfoliopage{
+    background-color: var(--pane-background-color);
+    color: var(--font-color-1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    row-gap: 0px;
+    overflow: auto;
+
+    /* border-width: var(--border-width);
+    border-style: var(--border-style);
+    border-color: var(--border-color); */
+}
+
+.x {
+    margin-left: 2.5px;
+
+    /* min-height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+
+    border-width: var(--border-width);
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+
+    background-color: #3d9cf5;
+
+}
+
+.x > img {
+    width: 37.25vw;
+    border-width: 25px;
+    border-style: solid;
+    border-color: white;
+
+}
+
+.words {
+    padding:10px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+/* ----> For Function Read More <---- */
+.text{
+    display: inline;
+    width: 100%;
+  }
+    
+.read-or-hide{
+    color: var(--pane-background-color);
+    cursor: pointer;
+  }
+
+button {
+    margin-top:15px;
+    height: 50px;
+    width: 125px;
+    font-size: large;
+    border-radius: 2.5px;
+ 
+}
+
+/* ----> For Function Read More <---- */
+
+
+/* SCROLL BAR PORTFOLIO PAGE*/
+
+.portfoliopage::-webkit-scrollbar {
+    height: 0.5vh;
+    width: 0.25vw;               /* width of the entire scrollbar */ 
+  }
+.portfoliopage::-webkit-scrollbar-track {
+    background: var(white);        /* color of the tracking area */
+  }
+.portfoliopage::-webkit-scrollbar-thumb {
+    background-color: white;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 1vw solid grey; 
+  }
