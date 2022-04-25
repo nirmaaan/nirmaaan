@@ -9,6 +9,10 @@ import tfnswlogo from '../static/tfnsw.png'
 import twitter from '../static/twitter.png'
 import linkedin from '../static/linkedin.png'
 import github from '../static/github.png'
+import mail from '../static/mail.png'
+import call from '../static/call.png'
+
+import downloadArrow from '../static/download-arrow.png'
 
 import page1 from '../static/Page 1.PNG'
 import page2 from '../static/Page 2.PNG'
@@ -39,11 +43,8 @@ export function AboutPage(){
                     
                         <div className="image-box">
                             <img src={image} alt="profile-picture"></img>
-                           
                         </div>
-
                         
-
                         <div className="info-box"> 
                             
                             <h3 className='fname'>NIRMAN </h3>
@@ -64,12 +65,16 @@ export function AboutPage(){
                     <h5>CERTIFIED</h5>
                         <div className='badge'>
                         
-                        <img src={badge} alt="badge"></img>
+                            <a href='https://docs.microsoft.com/en-us/learn/certifications/exams/pl-300'>
+                                <img src={badge} alt="badge"></img>
+                            </a>
                         </div>
 
                         <div className='python'>
                        
-                        <img src={python} alt="badge"></img>
+                        <a href='https://pythoninstitute.org/certification/pcep-certification-entry-level/'>
+                            <img src={python} alt="badge"></img>
+                        </a>
                         </div>        
                         
                     </div>
@@ -78,11 +83,11 @@ export function AboutPage(){
                     <div className='flex-row clients'>
                         <h5>CONTRACT</h5>
                         <div className='logo'>
-                        <img src={aecomlogo} alt="aecom-logo"></img>
+                        <a href='https://www.aecom.com' targe="_blank"><img src={aecomlogo} alt="aecom-logo"></img></a>
                         </div>
 
                         <div className='logo tfnsw'>
-                        <img src={tfnswlogo} alt="tfnsw-logo"></img>
+                        <a href='https://www.transport.nsw.gov.au/'><img src={tfnswlogo} alt="tfnsw-logo"></img></a>
                         </div>
 
                     </div>
@@ -90,9 +95,11 @@ export function AboutPage(){
 
                     <div className='flex-row profile-links'>
                         
-                        <a href='https://linkedin.com' target="_blank"><img src={linkedin} alt="linkedin-logo"></img></a>
-                        <a href='https://github.com/nirmaaan' target="_blank"><img src={github} alt="github-logo"></img></a>
-                        <a href='https://twitter.com/nirmaaan' target="_blank"><img src={twitter} alt="twitter-logo"></img></a>
+                    <a href='https://linkedin.com' target="_blank"><img src={linkedin} alt="linkedin-logo"></img></a>
+                <a href='https://github.com/nirmaaan' target="_blank"><img src={github} alt="github-logo"></img></a>
+                <a href='https://twitter.com/nirmaaan' target="_blank"><img src={twitter} alt="twitter-logo"></img></a>
+                <a href='mailto:nkesari@outlook.com' target="_blank"><img src={mail} alt="mail-logo"></img></a>
+                <a href='tel:+61-406-657-542'><img src={call} alt="call-logo"></img></a>
                         
 
 
@@ -123,6 +130,11 @@ export function ResumePage(){
         <>      
                <div className="right-pane resumepage">
 
+                <div className="resume-download-bar flex-row"> 
+                    <a href='/download'> DOWNLOAD <img src={downloadArrow}></img></a>
+                </div>
+
+
                 <div className='resumepages'>
                     <img src={page1} alt="resume p1"></img>
                 </div>
@@ -133,7 +145,26 @@ export function ResumePage(){
                     <img src={page3} alt="resume p3"></img>
                 </div>
 
-               </div>
+
+                <div className="resume-download-bar flex-row"> 
+                    <a href='/download'> DOWNLOAD <img src={downloadArrow}></img></a>
+                </div>
+
+             
+
+               <div className='flex-row profile-links'>
+                        
+               <a href='https://linkedin.com' target="_blank"><img src={linkedin} alt="linkedin-logo"></img></a>
+                <a href='https://github.com/nirmaaan' target="_blank"><img src={github} alt="github-logo"></img></a>
+                <a href='https://twitter.com/nirmaaan' target="_blank"><img src={twitter} alt="twitter-logo"></img></a>
+                <a href='mailto:nkesari@outlook.com' target="_blank"><img src={mail} alt="mail-logo"></img></a>
+                <a href='tel:+61-406-657-542'><img src={call} alt="call-logo"></img></a>
+                        
+
+                </div>
+
+                </div>
+
 
               
         </>
@@ -242,10 +273,28 @@ export function PortfolioPage(){
     )
 }
 
+
+
+
+
 export function LetstalkPage(){
     return(
         <>
-        <       h3> Let's Talk Page </h3>
+        <div className="right-pane letstalkpage ">
+        
+               
+                    
+                    <div className='contact'>
+                        <h3> Let's Talk</h3>
+                        <a className="tooltip" href='https://linkedin.com' target="_blank"><img src={linkedin} alt="linkedin-logo"></img><span className='tooltiptext'>LinkedIn</span></a>
+                        <a className="tooltip" href='https://github.com/nirmaaan' target="_blank"><img src={github} alt="github-logo"></img><span className='tooltiptext'>github.com/nirmaaan</span></a>
+                        <a className="tooltip" href='https://twitter.com/nirmaaan' target="_blank"><img src={twitter} alt="twitter-logo"></img><span className='tooltiptext'>twitter.com/nirmaaan</span></a>
+                        <a className="tooltip" href='mailto:nkesari@outlook.com' target="_blank"><img src={mail} alt="mail-logo"></img><span className='tooltiptext'>E-mail: nkesari@outlook.com</span></a>
+                        <a className="tooltip" href='tel:+61-406-657-542'><img src={call} alt="call-logo"></img><span className='tooltiptext'>M: +61 406 657 542</span></a>
+                    </div>
+          
+
+        </div>
         </>
     )
 }

@@ -1,7 +1,7 @@
 :root{
     --font-size: 1.2em;
     --paragraph-font-size:0.8em;
-    --border-width:0.1rem;
+    --border-width:0rem;
     --border-style:dotted;
     --border-color:white;
     --font-family:Arial;
@@ -149,6 +149,14 @@ p {
     
 }
 
+.title {
+    padding-left: 10px;
+    padding-top:10px;
+    font-weight: bold;
+    color: var(--font-color-1);
+    
+}
+
 
 
 
@@ -171,12 +179,7 @@ p {
 
 }
 
-/* .title-mobile {
-    color: #000000;
-    padding: 10px;
-    float:left;
-    margin-bottom: 10px;
-} */
+
 
 
 /* RIGHT PANE */
@@ -396,7 +399,7 @@ p {
 
 
 
-.badge > img{
+.badge > a > img{
 
     width: calc(100px + 2.5vw);
     height: calc(100px + 2.5vw);
@@ -408,7 +411,7 @@ p {
 }
 
 
-.python > img{
+.python > a > img{
 
     padding:0px 25px 0px 25px;
     width: calc(100px + 2.5vw);
@@ -435,7 +438,7 @@ p {
 
 }
 
-.logo > img{
+.logo > a > img{
     padding-top: 10px;
     width: calc(125px + 2.5vw);
     height:auto;
@@ -446,13 +449,28 @@ p {
 }
 
 .profile-links {
+ 
+    display: flex;
+    flex-direction: row;
+    /* width: 75vw; */
+    
     background-color: rgb(238, 238, 238);
     justify-content: center;
+
+    padding:5px;
 }
 
 .profile-links > a > img {
-    width:24px;
-    height: 24px;
+    /* width:24px;
+    height: 24px; */
+
+    height: 24px ;
+    border-radius: 50%;
+    border-color: #000000;
+    border-width: 0.08em;
+    border-style: solid;
+    padding: 5px;
+    margin-left: 5px;
 }
 
 
@@ -504,10 +522,42 @@ p {
     border: 1vw solid grey; 
   }
 
+.resume-download-bar {
+    
+    padding: 10px;
+    /* justify-content: center; */
+    background-color: beige;
+    color: var(--pane-background-color);
+
+}
+.resume-download-bar img {
+
+    width: 20px;
+    height: auto;
+}
+
+.resume-download-bar a{
+    text-decoration: underline 0em beige;
+    color: var(--pane-background-color);
+}
+
+
+
 .resumepages {
 
     padding-top:10px;
-    padding-left:12vw;
+    display: flex;
+    align-items: center;
+  
+}
+
+
+
+.resumepages > img{
+
+  height: auto;
+  width:95vw;
+  max-width: 800px;
 
 }
 
@@ -624,3 +674,115 @@ button {
     border-radius: 10px;       /* roundness of the scroll thumb */
     border: 1vw solid grey; 
   }
+
+
+
+  /* ---- Let's Talk Page ---- */
+
+  
+.letstalkpage {
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+
+    
+
+    border-width: var(--border-width);
+    border-style: var(--border-style);
+    border-color: black;
+
+}
+@media screen and (max-width:1000px) {
+
+    .letstalkpage{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        height: 100vh;
+
+        /* background-color: yellow; */
+        
+    }
+
+    
+    
+}
+
+
+ .contact {
+
+    /* padding-top: 34vh; */
+    justify-content: center;
+    
+    /* height:50vw; */
+
+    border-width: 0.08em;
+    border-style:solid;
+    border-color: rgba(14, 17, 21, 0.33);
+
+    background-color: aliceblue;
+
+    text-align: center;
+    color: var(--pane-background-color);
+
+    padding: 10px;
+
+ }
+
+ .contact > a > img {
+
+
+    height: 35px ;
+    border-radius: 50%;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 0.08em;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.contact > a > span {
+    display:none
+}
+
+.contact > a:hover span{
+    display: block;
+    
+  }
+
+.tooltip {
+position: relative;
+display: inline-block;
+border-bottom: 0px dotted rgb(18, 18, 18);
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 280px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+
+/* Position the tooltip */
+position: absolute;
+z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+}
+
+@media screen and (max-width:1000px) {
+   
+    .tooltip:hover .tooltiptext {
+        visibility: hidden;
+  
+    }
+    
+}

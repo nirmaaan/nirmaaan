@@ -13,11 +13,11 @@ import { useState } from 'react';
 function App() {
 
   const [hideNav, setHideNav] = useState(true);
+  
 
 
   return (
     <>
-
 
 
     <div className="App">
@@ -32,7 +32,7 @@ function App() {
                 <div className="nav-box center">
                     <a href="/"> About </a><br></br>
                     <a href="/resume"> Resume </a><br></br>
-                    <a href="/portfolio"> Portfolio</a><br></br>
+                    {/* <a href="/portfolio"> Portfolio</a><br></br> */}
                     <a href="/letstalk"> Let's Talk </a><br></br>
                 </div>
 
@@ -42,11 +42,8 @@ function App() {
 
       
             <div className="nav-pane-mobile">
-                {/* Show or hide condition*/}
-
-                {/* {`menu-symbol ${hideNav ? "change" : ""}`} */}
-                {/* <div className="title-mobile">/nirmankesari.info</div> */}
-
+                
+               
                 <div className={`menu-symbol ${hideNav ? "" : "change"}`} onClick={()=> {if (hideNav){ 
                                                               setHideNav(false)
                                                             } else{
@@ -57,13 +54,18 @@ function App() {
                       <div className="bar2"></div>
                       <div className="bar3"></div>
                       
-                    </div> 
-                  <br></br>                                 
+                      
+                    </div>
+
+                  <div className="title"> NK </div> 
+
+    
+                                                   
 
                   <div className={`nav-box ${hideNav ? "hide-nav-box" : ""}`}>
                     <a href="/"> About </a><br></br>
                     <a href="/resume"> Resume </a><br></br>
-                    <a href="/portfolio"> Portfolio</a><br></br>
+                    {/* <a href="/portfolio"> Portfolio</a><br></br> */}
                     <a href="/letstalk"> Let's Talk </a><br></br>
                     </div>
 
@@ -78,10 +80,12 @@ function App() {
                 <Routes>
                   <Route path="/" element={<AboutPage />} />
                   <Route path="/resume" element={<ResumePage />} />
-                  <Route path="/portfolio" element={<PortfolioPage />} />
+                  {/* <Route path="/portfolio" element={<PortfolioPage />} /> */}
                   <Route path="/letstalk" element={<LetstalkPage />} />
                 </Routes>
               </Router>
+
+                                    
           
 
         </div>
