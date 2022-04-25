@@ -36,7 +36,6 @@ body{
 
     .main-container{
     
-
         display: flex;
         flex-direction: column;
         background-color: var(--pane-background-color);
@@ -59,7 +58,8 @@ body{
 /* LEFT PANE CONTENTS */
 
 /* NAV BOX */
-.nav-box{
+
+.center {
 
     margin: 0;
     position: relative;
@@ -67,7 +67,12 @@ body{
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 
+}
+.nav-box{
+
+
     padding:10px;
+    
 
     border-width: var(--border-width);
     border-style: var(--border-style);
@@ -111,12 +116,27 @@ body{
 }
 
 
+.hide-nav-box {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    
+}
+
+
+
+/* NAV PANE FOR MOBILE */
 .nav-pane-mobile {
 
     background-color: #3d9cf5;
-    height: 5vh;
+    justify-content: left;
+  
     
 }
+
+
+
 
 /* To turn off display of left pane*/
 @media screen and (max-width:1000px) {
@@ -160,11 +180,26 @@ body{
 /* STRUCTURE OF RIGHT PANE IN ABOUT*/
 .aboutpage {
     overflow: auto;
+    scroll-behavior: smooth;
     scrollbar-width: thin;
     /* grid-template-columns: 1fr 3fr; ADDED GRID TEMPLATE */
       
 }
 
+/* SCROLL BAR RESUME PAGE */
+
+.aboutpage::-webkit-scrollbar {
+    height: 0.5vh;
+    width: 0.25vw;               /* width of the entire scrollbar */ 
+  }
+.aboutpage::-webkit-scrollbar-track {
+    background: var(white);        /* color of the tracking area */
+  }
+.aboutpage::-webkit-scrollbar-thumb {
+    background-color: white;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 1vw solid grey; 
+}
 
 
 
@@ -203,6 +238,8 @@ body{
     width: calc(200px + 2.5vw);
     height:calc(200px + 2.5vw);
 
+ 
+
     border-width: var(--border-width);
     border-style: var(--border-style);
     border-color: var(--border-color);
@@ -239,6 +276,8 @@ body{
 
     width: calc(200px + 2.5vw);
     height: calc(200px + 2.5vw);
+
+  
 
 
     border-radius: 90%;
