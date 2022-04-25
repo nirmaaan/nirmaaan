@@ -1,9 +1,18 @@
 import { useState } from 'react';
 import './allPages.css'
 import image from '../static/nirman.jpg'
-import page1 from './Page 1.PNG'
-import page2 from './Page 2.PNG'
-import page3 from './Page 3.PNG'
+import badge from '../static/badge.png'
+import python from '../static/python.png'
+import aecomlogo from '../static/aecom-logo.png'
+import tfnswlogo from '../static/tfnsw.png'
+
+import twitter from '../static/twitter.png'
+import linkedin from '../static/linkedin.png'
+import github from '../static/github.png'
+
+import page1 from '../static/Page 1.PNG'
+import page2 from '../static/Page 2.PNG'
+import page3 from '../static/Page 3.PNG'
 
 import SkillBar from 'react-skillbars';
 import skills from '../static/skillsData.json'
@@ -18,20 +27,22 @@ const colors = {
     }
   }
 
-
 export function AboutPage(){
 
     return(
         <>      
-        
+
                 {/* RIGHT PANE - Second Grid Box */}
                 <div className="right-pane aboutpage"> 
 
                     <div className='flex-row'> 
                     
                         <div className="image-box">
-                            <img src={image} alt="profile"></img>
+                            <img src={image} alt="profile-picture"></img>
+                           
                         </div>
+
+                        
 
                         <div className="info-box"> 
                             
@@ -48,6 +59,52 @@ export function AboutPage(){
 
                     </div>
 
+
+                    <div className='flex-row certifications'>
+                    <h5>CERTIFIED</h5>
+                        <div className='badge'>
+                        
+                        <img src={badge} alt="badge"></img>
+                        </div>
+
+                        <div className='python'>
+                       
+                        <img src={python} alt="badge"></img>
+                        </div>        
+                        
+                    </div>
+
+
+                    <div className='flex-row clients'>
+                        <h5>CONTRACT</h5>
+                        <div className='logo'>
+                        <img src={aecomlogo} alt="aecom-logo"></img>
+                        </div>
+
+                        <div className='logo tfnsw'>
+                        <img src={tfnswlogo} alt="tfnsw-logo"></img>
+                        </div>
+
+                    </div>
+
+
+                    <div className='flex-row profile-links'>
+                        
+                        <a href='https://linkedin.com' target="_blank"><img src={linkedin} alt="linkedin-logo"></img></a>
+                        <a href='https://github.com/nirmaaan' target="_blank"><img src={github} alt="github-logo"></img></a>
+                        <a href='https://twitter.com/nirmaaan' target="_blank"><img src={twitter} alt="twitter-logo"></img></a>
+                        
+
+
+                    </div>
+
+
+                  
+                        
+                        
+              
+
+                
                  
                    
 
@@ -67,13 +124,13 @@ export function ResumePage(){
                <div className="right-pane resumepage">
 
                 <div className='resumepages'>
-                    <img src={page1}></img>
+                    <img src={page1} alt="resume p1"></img>
                 </div>
                 <div className='resumepages'>
-                    <img src={page2}></img>
+                    <img src={page2} alt="resume p2"></img>
                 </div>
                 <div className='resumepages'>
-                    <img src={page3}></img>
+                    <img src={page3} alt="resume p3"></img>
                 </div>
 
                </div>
