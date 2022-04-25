@@ -57,7 +57,7 @@ function App() {
                       
                     </div>
 
-                  <div className="title" href="/"> NK </div> 
+                  <div className="title"><a href="/"> NK </a> </div> 
 
     
                                                    

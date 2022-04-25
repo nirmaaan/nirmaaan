@@ -157,6 +157,18 @@ p {
     
 }
 
+.title > a {
+   
+    color: white;
+    text-decoration: none;
+}
+
+.title > a:hover {
+    cursor: pointer;
+ 
+}
+
+
 
 
 
@@ -401,8 +413,8 @@ p {
 
 .badge > a > img{
 
-    width: calc(100px + 2.5vw);
-    height: calc(100px + 2.5vw);
+    width: calc(75px + 2.5vw);
+    height: calc(75px + 2.5vw);
     
     border-width: var(--border-width);
     border-style: var(--border-style);
@@ -414,8 +426,8 @@ p {
 .python > a > img{
 
     padding:0px 25px 0px 25px;
-    width: calc(100px + 2.5vw);
-    height: calc(100px + 2.5vw);
+    width: calc(75px + 2.5vw);
+    height: calc(75px + 2.5vw);
     
     border-width: var(--border-width);
     border-style: var(--border-style);
