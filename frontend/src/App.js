@@ -9,7 +9,6 @@ import { AboutPage, ResumePage, PortfolioPage, LetstalkPage } from './pages/allP
 
 function App() {
   
-  // console.log('refreshed')
 
 
   return (

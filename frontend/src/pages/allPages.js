@@ -26,20 +26,32 @@ export function AboutPage(){
         
                 {/* RIGHT PANE - Second Grid Box */}
                 <div className="right-pane aboutpage"> 
-                    <div className="image-info-box">
-                        <img src={image} alt="profile"></img>
+
+                    <div className='flex-row'> 
+                    
+                        <div className="image-box">
+                            <img src={image} alt="profile"></img>
+                        </div>
+
+                        <div className="info-box"> 
+                            
+                            <h3 className='fname'>NIRMAN </h3>
+                            <h3 className='lname'>KESARI</h3>
+
+                            <h5 className='role'> Data Consultant </h5>
+
+                            <p>  Nirman is an analyst with 4+ years of experience in delivering insights, data visualisations, and consulting teams in driving data-based decisions.</p>
+                            <p>  He is a certified in building Power BI applications by Microsoft and is proficient in python libraries such as pandas, Django & React, TensorFlow etc for data processing, web development and machine learning end to end development of applications.</p>
+                            {/* <p>  Currently, he has been contracted full-time by AECOM and partly supporting teams in Transport for NSW for requirement of data solutions. </p> */}
+
+                        </div>
+
                     </div>
 
-                    <div className="image-info-box"> 
-                        
-                        <h3 className='fname'>NIRMAN </h3>
-                        <h3 className='lname'>KESARI</h3>
+                 
+                   
 
-                        <h5 className='role'> Data Consultant </h5>
-
-                        <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quasi. Repellendus fugit aperiam pariatur recusandae laboriosam dolores, nesciunt praesentium et numquam eligendi voluptatum eaque tempora non temporibus a facilis sit, minima aut. Doloremque quibusdam commodi asperiores consequuntur natus error officia quia. Fugit dignissimos, dolores beatae fugiat quasi veniam. </p>
-
-                    </div>
+                  
                 </div>
          
         </>
@@ -50,8 +62,6 @@ export function AboutPage(){
 export function ResumePage(){
 
   
-
-
     return(
         <>      
                <div className="right-pane resumepage">
@@ -136,7 +146,9 @@ export function PortfolioPage(){
                     </div> 
 
                     <div className='x'>
-                        <img src={imagePlaceholder}></img> 
+                        {/* <img src={imagePlaceholder}></img> */}
+                        {/* <embed href='https://app.powerbi.com/view?r=eyJrIjoiNTYzMGQxYWQtM2M2Zi00ODRmLWI3ZDAtMTBlNzI1YzAwYTE5IiwidCI6Ijg5YzhjNjhmLWIwMDYtNGM1OS05NTBkLWY3ZDgzMzNiNDU0OCJ9&pageName=ReportSection'></embed>  */}
+                        <iframe title="Demo - Travel Time" src="https://app.powerbi.com/view?r=eyJrIjoiNTYzMGQxYWQtM2M2Zi00ODRmLWI3ZDAtMTBlNzI1YzAwYTE5IiwidCI6Ijg5YzhjNjhmLWIwMDYtNGM1OS05NTBkLWY3ZDgzMzNiNDU0OCJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
                     </div>
 
                     <div className='x'>
