@@ -32,6 +32,18 @@ body{
     
 }
 
+@media screen and (max-width:1000px) {
+
+    .main-container{
+    
+
+        display: flex;
+        flex-direction: column;
+        background-color: var(--pane-background-color);
+
+    }
+}
+
 
 /* LEFT PANE */
 .left-pane {
@@ -41,19 +53,6 @@ body{
     background-color: var(--nav-background-color);
 
 }
-
-
-@media screen and (max-width:1000px) {
-
-    .main-container{
-        display:grid;
-        grid-template-columns: 1fr;
-
-    }
-   
-
-}
-
 
 
 
@@ -75,21 +74,6 @@ body{
     border-color: var(--border-color);
 
 }
-
-@media screen and (max-width:1000px) {
-
-    .left-pane {
-        /* height: 0.1vh; */
-        /* background-color: yellow; */
-    }
-
-   .nav-box{
-       display: none;
-   }
-   
-
-}
-
 
 /*  NAV ITEMS */
 .nav-box > a {
@@ -127,6 +111,37 @@ body{
 }
 
 
+.nav-pane-mobile {
+
+    background-color: #3d9cf5;
+    height: 5vh;
+    
+}
+
+/* To turn off display of left pane*/
+@media screen and (max-width:1000px) {
+
+    .left-pane {
+        display: none;
+    }
+
+   
+}
+
+/* To turn ff display of mobile-nav-pane in big screen*/
+@media screen and (min-width:1000px) {
+
+    .nav-pane-mobile {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
 
 /* RIGHT PANE */
 .right-pane{
@@ -158,7 +173,6 @@ body{
     display: flex;
     flex-direction: row;
 
-    
 
     border-width: var(--border-width);
     border-style: var(--border-style);
@@ -198,7 +212,7 @@ body{
 
 .info-box {
     
-    display: block;
+  
     position: inherit;
     background-color: #000000;
     color: var(--font-color-1);
@@ -218,8 +232,6 @@ body{
     to {border-color: var(--pane-background-color);}
     /* to {border-color: var(--font-color-1);} */
   }
-
-
 
 
 .image-box  > img {

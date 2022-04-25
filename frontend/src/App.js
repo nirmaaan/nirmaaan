@@ -32,6 +32,12 @@ function App() {
 
             </div>
 
+            <div className="nav-pane-mobile"> 
+
+                <p> MOBILE NAV PANE. </p>
+
+            </div>
+
 
               <Router>
                 <Routes>
