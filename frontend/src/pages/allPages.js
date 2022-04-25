@@ -95,7 +95,7 @@ export function AboutPage(){
 
                     <div className='flex-row profile-links'>
                         
-                    <a href='https://linkedin.com' target="_blank"><img src={linkedin} alt="linkedin-logo"></img></a>
+                    <a href='https://www.linkedin.com/in/nirman-kesari-a23188a8' target="_blank"><img src={linkedin} alt="linkedin-logo"></img></a>
                 <a href='https://github.com/nirmaaan' target="_blank"><img src={github} alt="github-logo"></img></a>
                 <a href='https://twitter.com/nirmaaan' target="_blank"><img src={twitter} alt="twitter-logo"></img></a>
                 <a href='mailto:nkesari@outlook.com' target="_blank"><img src={mail} alt="mail-logo"></img></a>
@@ -154,7 +154,7 @@ export function ResumePage(){
 
                <div className='flex-row profile-links'>
                         
-               <a href='https://linkedin.com' target="_blank"><img src={linkedin} alt="linkedin-logo"></img></a>
+               <a href='https://www.linkedin.com/in/nirman-kesari-a23188a8' target="_blank"><img src={linkedin} alt="linkedin-logo"></img></a>
                 <a href='https://github.com/nirmaaan' target="_blank"><img src={github} alt="github-logo"></img></a>
                 <a href='https://twitter.com/nirmaaan' target="_blank"><img src={twitter} alt="twitter-logo"></img></a>
                 <a href='mailto:nkesari@outlook.com' target="_blank"><img src={mail} alt="mail-logo"></img></a>
@@ -286,7 +286,7 @@ export function LetstalkPage(){
                     
                     <div className='contact'>
                         <h3> Let's Talk</h3>
-                        <a className="tooltip" href='https://linkedin.com' target="_blank"><img src={linkedin} alt="linkedin-logo"></img><span className='tooltiptext'>LinkedIn</span></a>
+                        <a className="tooltip" href='https://www.linkedin.com/in/nirman-kesari-a23188a8' target="_blank"><img src={linkedin} alt="linkedin-logo"></img><span className='tooltiptext'>LinkedIn</span></a>
                         <a className="tooltip" href='https://github.com/nirmaaan' target="_blank"><img src={github} alt="github-logo"></img><span className='tooltiptext'>github.com/nirmaaan</span></a>
                         <a className="tooltip" href='https://twitter.com/nirmaaan' target="_blank"><img src={twitter} alt="twitter-logo"></img><span className='tooltiptext'>twitter.com/nirmaaan</span></a>
                         <a className="tooltip" href='mailto:nkesari@outlook.com' target="_blank"><img src={mail} alt="mail-logo"></img><span className='tooltiptext'>E-mail: nkesari@outlook.com</span></a>
