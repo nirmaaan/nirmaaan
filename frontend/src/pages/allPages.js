@@ -99,7 +99,7 @@ export function AboutPage(){
                 <a href='https://github.com/nirmaaan' target="_blank"><img src={github} alt="github-logo"></img></a>
                 <a href='https://twitter.com/nirmaaan' target="_blank"><img src={twitter} alt="twitter-logo"></img></a>
                 <a href='mailto:nkesari@outlook.com' target="_blank"><img src={mail} alt="mail-logo"></img></a>
-                <a href='tel:+61-406-657-542'><img src={call} alt="call-logo"></img></a>
+                {/* <a href='tel:+61'><img src={call} alt="call-logo"></img></a> */}
                         
 
 
@@ -130,9 +130,9 @@ export function ResumePage(){
         <>      
                <div className="right-pane resumepage">
 
-                <div className="resume-download-bar flex-row"> 
+                {/* <div className="resume-download-bar flex-row"> 
                     <a href='/download'> DOWNLOAD <img src={downloadArrow}></img></a>
-                </div>
+                </div> */}
 
 
                 <div className='resumepages'>
@@ -146,9 +146,9 @@ export function ResumePage(){
                 </div>
 
 
-                <div className="resume-download-bar flex-row"> 
+                {/* <div className="resume-download-bar flex-row"> 
                     <a href='/download'> DOWNLOAD <img src={downloadArrow}></img></a>
-                </div>
+                </div> */}
 
              
 
@@ -156,9 +156,9 @@ export function ResumePage(){
                         
                <a href='https://www.linkedin.com/in/nirman-kesari-a23188a8' target="_blank"><img src={linkedin} alt="linkedin-logo"></img></a>
                 <a href='https://github.com/nirmaaan' target="_blank"><img src={github} alt="github-logo"></img></a>
-                <a href='https://twitter.com/nirmaaan' target="_blank"><img src={twitter} alt="twitter-logo"></img></a>
+                {/* <a href='https://twitter.com/nirmaaan' target="_blank"><img src={twitter} alt="twitter-logo"></img></a> */}
                 <a href='mailto:nkesari@outlook.com' target="_blank"><img src={mail} alt="mail-logo"></img></a>
-                <a href='tel:+61-406-657-542'><img src={call} alt="call-logo"></img></a>
+                {/* <a href='tel:+61'><img src={call} alt="call-logo"></img></a> */}
                         
 
                 </div>
@@ -288,9 +288,9 @@ export function LetstalkPage(){
                         <h3> Let's Talk</h3>
                         <a className="tooltip" href='https://www.linkedin.com/in/nirman-kesari-a23188a8' target="_blank"><img src={linkedin} alt="linkedin-logo"></img><span className='tooltiptext'>LinkedIn</span></a>
                         <a className="tooltip" href='https://github.com/nirmaaan' target="_blank"><img src={github} alt="github-logo"></img><span className='tooltiptext'>github.com/nirmaaan</span></a>
-                        <a className="tooltip" href='https://twitter.com/nirmaaan' target="_blank"><img src={twitter} alt="twitter-logo"></img><span className='tooltiptext'>twitter.com/nirmaaan</span></a>
+                        {/* <a className="tooltip" href='https://twitter.com/nirmaaan' target="_blank"><img src={twitter} alt="twitter-logo"></img><span className='tooltiptext'>twitter.com/nirmaaan</span></a> */}
                         <a className="tooltip" href='mailto:nkesari@outlook.com' target="_blank"><img src={mail} alt="mail-logo"></img><span className='tooltiptext'>E-mail: nkesari@outlook.com</span></a>
-                        <a className="tooltip" href='tel:+61-406-657-542'><img src={call} alt="call-logo"></img><span className='tooltiptext'>M: +61 406 657 542</span></a>
+                        {/* <a href='tel:+61'><img src={call} alt="call-logo"></img></a> */}
                     </div>
           
 

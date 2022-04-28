@@ -46,8 +46,11 @@ p {
     .main-container{
     
         display: flex;
+    
+        background-color: aliceblue;
         flex-direction: column;
         background-color: var(--pane-background-color);
+
 
     }
 }
@@ -150,8 +153,9 @@ p {
 }
 
 .title {
+    font-size: var(--font-size);
     padding-left: 10px;
-    padding-top:10px;
+    padding-top:5px;
     font-weight: bold;
     color: var(--font-color-1);
     
