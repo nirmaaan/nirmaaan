@@ -142,3 +142,6 @@ if DEBUG == True:
 
 else:
     SECURE_SSL_REDIRECT = True
+
+
+X_FRAME_OPTIONS = 'ALLOW-FROM https://nirmankesari.info/'
