@@ -2,20 +2,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import './App.css';
 import './menuSymbol.css';
-import { AboutPage, ResumePage, PortfolioPage, LetstalkPage } from './pages/allPages';
+import { AboutPage, ResumePage, PortfolioPage, LetstalkPage, Download } from './pages/allPages';
 
 import { useState } from 'react';
-
-
-
 
 
 function App() {
 
   const [hideNav, setHideNav] = useState(true);
   
-
-
   return (
     <>
 
@@ -34,6 +29,7 @@ function App() {
                     <a href="/resume"> Resume </a><br></br>
                     {/* <a href="/portfolio"> Portfolio</a><br></br> */}
                     <a href="/letstalk"> Let's Talk </a><br></br>
+                   
                 </div>
 
             </div>
@@ -67,6 +63,7 @@ function App() {
                     <a href="/resume"> Resume </a><br></br>
                     {/* <a href="/portfolio"> Portfolio</a><br></br> */}
                     <a href="/letstalk"> Let's Talk </a><br></br>
+                    
                     </div>
 
             </div>
@@ -82,6 +79,7 @@ function App() {
                   <Route path="/resume" element={<ResumePage />} />
                   {/* <Route path="/portfolio" element={<PortfolioPage />} /> */}
                   <Route path="/letstalk" element={<LetstalkPage />} />
+               
                 </Routes>
               </Router>
 

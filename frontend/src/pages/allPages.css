@@ -3,7 +3,7 @@
     --paragraph-font-size:0.8em;
     --border-width:0rem;
     --border-style:dotted;
-    --border-color:white;
+    --border-color:black;
     --font-family:Arial;
     --nav-background-color: #3d9cf5;
     --pane-background-color: #000000;
@@ -16,7 +16,7 @@ body{
 
 
     color: rgb(189, 189, 189);
-    overflow: hidden;
+    /* overflow: hidden; */
     scrollbar-width: thin;
     
 }
@@ -38,6 +38,8 @@ p {
     border-width: var(--border-width);
     border-style: var(--border-style);
     border-color: var(--border-color);
+
+ 
     
 }
 
@@ -148,6 +150,7 @@ p {
 
     background-color: #3d9cf5;
     justify-content: left;
+    padding: 5px;
   
     
 }
@@ -214,7 +217,7 @@ p {
 /* STRUCTURE OF RIGHT PANE IN ABOUT*/
 .aboutpage {
     
-    overflow: auto;
+    overflow: scroll;
     scroll-behavior: smooth;
     scrollbar-width: thin;
     /* grid-template-columns: 1fr 3fr; ADDED GRID TEMPLATE */
@@ -229,14 +232,13 @@ p {
 
 @media screen and (max-width:1000px) {
     .aboutpage{ 
-        padding-top:5vh;
+        padding-top:20px;
     }
      
  }
 
 
-
-/* SCROLL BAR RESUME PAGE */
+/* SCROLL BAR ABOUT PAGE */
 
 .aboutpage::-webkit-scrollbar {
     height: 0.5vh;
@@ -259,7 +261,6 @@ p {
     flex-direction: row;
 
     /* justify-content: center; */
-
 
     border-width: var(--border-width);
     border-style: var(--border-style);
@@ -470,10 +471,11 @@ p {
     flex-direction: row;
     /* width: 75vw; */
     
-    background-color: rgb(238, 238, 238);
+    background-color: aliceblue;
     justify-content: center;
 
-    padding:5px;
+    padding-top:35px;
+  
 }
 
 .profile-links > a > img {
@@ -483,10 +485,24 @@ p {
     height: 24px ;
     border-radius: 50%;
     border-color: #000000;
-    border-width: 0.08em;
+    border-width: 0.1em;
     border-style: solid;
     padding: 5px;
     margin-left: 5px;
+}
+
+.profile-links > a > img:hover{
+    z-index: 1;
+    border-color: #3d9cf5;
+    border-width: 0.08em;
+    
+}
+
+.profile-links > a > img:active{
+    z-index: 1;
+    border-color: #105ca3;
+    border-width: 0.08em;
+    
 }
 
 
@@ -516,10 +532,37 @@ p {
 .resumepage {
     background-color: var(--font-color-1);
 
-    overflow: auto;
+    overflow-y: scroll;
+    height: 100vh;
+
     scrollbar-width: thin;
 
 }
+
+
+.iframe > iframe {
+    /* height: 100%; */
+    width: 100%;
+    height: 85vh;
+}
+
+.iframe {
+
+  
+  margin: 0; 
+  padding: 0; 
+  height: 85vh;
+  overflow: hidden;
+  width: 100%;
+
+  border-width: var(--border-width);
+  border-style: var(--border-style);
+  border-color: var(--border-color);
+ 
+
+}
+
+
 
 
 
@@ -538,44 +581,51 @@ p {
     border: 1vw solid grey; 
   }
 
-.resume-download-bar {
+
+
+.resume-download {
+
+    font-size: var(--paragraph-font-size);
+
+    text-align: center;
+    padding-top: 30px;
     
-    padding: 10px;
-    /* justify-content: center; */
-    background-color: beige;
+
+    /* border: solid 0.1em black; */
+    text-decoration: dotted;
+    background-color: aliceblue;
     color: var(--pane-background-color);
 
-}
-.resume-download-bar img {
+    margin-bottom: -5px;
 
-    width: 20px;
-    height: auto;
+
 }
 
-.resume-download-bar a{
-    text-decoration: underline 0em beige;
-    color: var(--pane-background-color);
+.resume-download > a {
+
+    text-decoration: none;
+    border-style:solid;
+    border-width: 0.08em;
+    border-radius: 5px;
+    padding: 5px 20px 5px 20px;
+
+    color: white;
+    background-color: rgb(85, 85, 85);
+
+    
+}
+
+.resume-download > a:hover{
+    background-color: #3d9cf5;
+    /* filter: invert(2); */
+}
+
+.resume-download > a:active{
+    background-color: #105ca3;
+    /* filter: invert(2); */
 }
 
 
-
-.resumepages {
-
-    padding-top:10px;
-    display: flex;
-    align-items: center;
-  
-}
-
-
-
-.resumepages > img{
-
-  height: auto;
-  width:95vw;
-  max-width: 800px;
-
-}
 
 
 .skillbox{
@@ -599,7 +649,7 @@ p {
     grid-template-columns: 1fr 1fr;
 
     row-gap: 0px;
-    overflow: auto;
+    overflow: scroll;
 
     /* border-width: var(--border-width);
     border-style: var(--border-style);
@@ -699,7 +749,7 @@ button {
 .letstalkpage {
 
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
@@ -715,9 +765,8 @@ button {
 
     .letstalkpage{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-
         height: 100vh;
 
         /* background-color: yellow; */
@@ -736,7 +785,7 @@ button {
     
     /* height:50vw; */
 
-    border-width: 0.08em;
+    border-width: 0em;
     border-style:solid;
     border-color: rgba(14, 17, 21, 0.33);
 
@@ -756,7 +805,7 @@ button {
     border-radius: 50%;
     border-color: #000000;
     border-style: solid;
-    border-width: 0.08em;
+    border-width: 0.1em;
     padding: 5px;
     margin-left: 5px;
 }
@@ -765,10 +814,27 @@ button {
     display:none
 }
 
+.contact > a > img:hover{
+    z-index: 1;
+    border-color: #3d9cf5;
+    border-width: 0.08em;
+    
+}
+
 .contact > a:hover span{
     display: block;
     
   }
+
+.contact > a > img:active{
+    z-index: 1;
+    border-color: #105ca3;
+    border-width: 0.08em;
+    
+}
+
+
+
 
 .tooltip {
 position: relative;
@@ -801,4 +867,15 @@ visibility: visible;
   
     }
     
+}
+
+.copyright {
+
+    background-color: aliceblue;
+    font-size: var(--paragraph-font-size);
+
+    color: black;
+    text-align: center;
+    padding-bottom: 150px;
+  
 }
