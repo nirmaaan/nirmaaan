@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.8bcc0436.css",
-    "main.js": "/static/js/main.c34f0095.js",
+    "main.css": "/static/css/main.8d4892a0.css",
+    "main.js": "/static/js/main.13fc2c73.js",
     "static/media/project.jpg": "/static/media/project.605879956b0a6f56f562.jpg",
     "static/media/python.png": "/static/media/python.a0cedc02edfc4ae4791c.png",
-    "static/media/Resume.pdf": "/static/media/Resume.864af3ab6bdd83ead28d.pdf",
+    "static/media/Resume.pdf": "/static/media/Resume.82290b5a392b5f536ad5.pdf",
     "static/media/nirman.jpg": "/static/media/nirman.d3d1173c69cde184a084.jpg",
     "static/media/badge.png": "/static/media/badge.5af3ef368adb76714ecc.png",
     "static/media/aecom-logo.png": "/static/media/aecom-logo.3d3c13455591089b7193.png",
     "static/media/tfnsw.png": "/static/media/tfnsw.ee0d19abdd1f1adfc398.png",
     "index.html": "/index.html",
-    "main.8bcc0436.css.map": "/static/css/main.8bcc0436.css.map",
-    "main.c34f0095.js.map": "/static/js/main.c34f0095.js.map"
+    "main.8d4892a0.css.map": "/static/css/main.8d4892a0.css.map",
+    "main.13fc2c73.js.map": "/static/js/main.13fc2c73.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bcc0436.css",
-    "static/js/main.c34f0095.js"
+    "static/css/main.8d4892a0.css",
+    "static/js/main.13fc2c73.js"
   ]
 }
