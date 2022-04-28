@@ -12,11 +12,6 @@ import github from '../static/github.png'
 import mail from '../static/mail.png'
 import call from '../static/call.png'
 
-import downloadArrow from '../static/download-arrow.png'
-
-import page1 from '../static/Page 1.PNG'
-import page2 from '../static/Page 2.PNG'
-import page3 from '../static/Page 3.PNG'
 
 import SkillBar from 'react-skillbars';
 import skills from '../static/skillsData.json'
@@ -45,7 +40,7 @@ export function AboutPage(){
                     <div className='flex-row'> 
                     
                         <div className="image-box">
-                            <img src={image} alt="profile-picture"></img>
+                            <img src={image} alt="profile"></img>
                         </div>
                         
                         <div className="info-box"> 
@@ -55,9 +50,9 @@ export function AboutPage(){
 
                             <h5 className='role'> Data Consultant </h5>
 
-                            <p>  Nirman is an analyst with 4+ years of experience in delivering insights, data visualisations, and consulting teams in driving data-based decisions.</p>
-                            <p>  He is a certified in building Power BI applications by Microsoft and is proficient in python libraries such as pandas, Django & React, TensorFlow etc for data processing, web development and machine learning end to end development of applications.</p>
-                            {/* <p>  Currently, he has been contracted full-time by AECOM and partly supporting teams in Transport for NSW for requirement of data solutions. </p> */}
+                            <p>  Nirman is an analyst with 4+ years of experience in consulting clients to unlock the potential of their data by the application of advanced analytics and visualisation tools.</p>
+                            <p>  He specialises in developing interactive dashboards and data models with workflows involving Python Pandas, Power BI, TensorFlow, etc., and holds experience in web development frameworks such as Django and React.</p>
+                            <p>  Nirman is passionate about minimising technical complexity for clients and focuses on outlining a clear fact-based story. </p>
 
                         </div>
 
@@ -98,26 +93,14 @@ export function AboutPage(){
 
                     <div className='flex-row profile-links'>
                         
-                    <a href='https://www.linkedin.com/in/nirman-kesari-a23188a8' target="_blank"><img src={linkedin} alt="linkedin-logo"></img></a>
-                <a href='https://github.com/nirmaaan' target="_blank"><img src={github} alt="github-logo"></img></a>
-                {/* <a href='https://twitter.com/nirmaaan' target="_blank"><img src={twitter} alt="twitter-logo"></img></a> */}
-                <a href='mailto:nkesari@outlook.com' target="_blank"><img src={mail} alt="mail-logo"></img></a>
-                {/* <a href='tel:+61'><img src={call} alt="call-logo"></img></a> */}
+                        <a href='https://www.linkedin.com/in/nirman-kesari-a23188a8' target="_blank"><img src={linkedin} alt="linkedin-logo"></img></a>
+                        <a href='https://github.com/nirmaaan' target="_blank"><img src={github} alt="github-logo"></img></a>
+                         {/* <a href='https://twitter.com/nirmaaan' target="_blank"><img src={twitter} alt="twitter-logo"></img></a> */}
+                        <a href='mailto:nkesari@outlook.com' target="_blank"><img src={mail} alt="mail-logo"></img></a>
+                        {/* <a href='tel:+61'><img src={call} alt="call-logo"></img></a> */}
                         
-
-
                     </div>
-                    <div className='copyright'>&copy; nirmankesari.info</div>
-
-
-                  
-                        
-                        
-              
-
-                
-                 
-                   
+                    <div className='copyright'>&copy; nirmankesari.info</div>                  
 
                   
                 </div>

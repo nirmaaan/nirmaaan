@@ -22,7 +22,10 @@ body{
 }
 
 p {
-    padding:10px;
+    padding-top:2px;
+    padding-left: 10px;
+    padding-right:10px;
+
 }
 
 
@@ -216,6 +219,8 @@ p {
 
 /* STRUCTURE OF RIGHT PANE IN ABOUT*/
 .aboutpage {
+
+
     
     overflow: scroll;
     scroll-behavior: smooth;
@@ -232,7 +237,7 @@ p {
 
 @media screen and (max-width:1000px) {
     .aboutpage{ 
-        padding-top:20px;
+        padding-top:25px;
     }
      
  }
@@ -285,8 +290,10 @@ p {
 /* RIGHT PANE INFO BOX */
 
 .image-box {
+
     color: white;
-    padding-left:10px;
+    padding-left:20px;
+    padding-bottom: 20px;
 
     width: calc(45px + 12.5vw);
     height: calc(35px + 12.5vw);
@@ -301,11 +308,11 @@ p {
    
     /* padding-left: 10px; */
 
-    width: calc(35px + 10.5vw);
-    height: calc(35px + 10.5vw);
+    width: calc(45px + 10.5vw);
+    height: calc(45px + 10.5vw);
 
     border-radius: 90%;
-    border-width: 0.1vw;
+    border-width: 0.2vw;
     border-style: solid;
 
     animation-name: imageborderanimation;
@@ -324,7 +331,7 @@ p {
     background-color: #000000;
     color: var(--font-color-1);
     
-    padding:20px 0px 10px 10px;
+    padding:10px 0px 10px 10px;
 
 
     border-width: var(--border-width);
@@ -345,6 +352,9 @@ p {
 
 
 .info-box {
+
+    padding-top:10px;
+
     color: var(--font-color-1);
 
     border-width: var(--border-width);
@@ -358,6 +368,7 @@ p {
     display:inline;
     font-weight: normal;
     padding-left: 10px;
+    
 
     border-width: var(--border-width);
     border-style: var(--border-style);
@@ -391,7 +402,7 @@ p {
 .info-box > p{
     font-size: var(--paragraph-font-size);
     color: rgb(189, 189, 189);
-    margin-top:10px;
+    margin-top:5px;
   
 
     border-width: var(--border-width);

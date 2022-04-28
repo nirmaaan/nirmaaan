@@ -26,7 +26,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['nirmankesari.herokuapp.com','nirmankesari.info']
+if DEBUG == True:
+
+    ALLOWED_HOSTS = ['*','nirmankesari.herokuapp.com','nirmankesari.info']
+
+else:
+    ALLOWED_HOSTS = ['nirmankesari.herokuapp.com','nirmankesari.info']
+
 
 
 # Application definition
@@ -129,4 +135,10 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-SECURE_SSL_REDIRECT = True
+
+if DEBUG == True:
+
+    SECURE_SSL_REDIRECT = False
+
+else:
+    SECURE_SSL_REDIRECT = True
