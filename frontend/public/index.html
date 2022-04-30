@@ -4,8 +4,24 @@
 
   <head>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!---- SECURITY ---->
+
+    <meta http-equiv="Content-Security-Policy" 
+    content="default-src * https://nirmankesari.info;
+    script-src * 'unsafe-eval' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' https://nirmankesari.info data:" >
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+
+
+
+
+
+    <!---- TITLE ---->
     
     <title>nirmankesari.info</title>
     <meta name="description" content="nirmankesari.info | Resume & portfolio of Nirman Kesari. Professional based in Sydney, AU.">
@@ -17,7 +33,10 @@
   </head>
   <body>
 
+
     <div id="root"></div>
 
   </body>
+
+
 </html>
